@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Social Web Tampermonkey Script
 // @namespace   https://github.com/vitrvm/SocialWeb
-// @version     0.1.1
+// @version     0.1.2
 // @description Make the WWW the social web
 // @match       *://*/*
 // @downloadURL https://raw.githubusercontent.com/vitrvm/SocialWeb/main/script/socialweb.js
