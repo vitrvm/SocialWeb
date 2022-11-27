@@ -1,4 +1,4 @@
-#mainBar {
+.mainBar {
     all: unset;
     position:fixed;
     width:100%;
@@ -9,7 +9,7 @@
     background-color: aqua;
 }
 
-#innerBar {
+.innerBar {
     position:fixed;
     width:60px;
     height:60px;
