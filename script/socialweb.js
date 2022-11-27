@@ -6,14 +6,25 @@
 // @match       *://*/*
 // @downloadURL https://raw.githubusercontent.com/vitrvm/SocialWeb/main/script/socialweb.js
 // @updateURL   https://raw.githubusercontent.com/vitrvm/SocialWeb/main/script/socialweb.js
+// @resource    IMPORTED_CSS https://raw.githubusercontent.com/vitrvm/SocialWeb/main/script/style.css
+// @grant       GM_getResourceText
+// @grant       GM_addStyle
 // @noframes
 // @copyright   2022+ Frank Garrote Cruz
 // ==/UserScript==
 
-var body = document.body;
-var newDiv = document.createElement("div")
-newDiv.style.cssText = "position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#0C9;color:#FFF;border-radius:50px;text-align:center;box-shadow: 2px 2px 3px #999;"
-const newContent = document.createTextNode("+");
-newDiv.appendChild(newContent);
-body.insertBefore(newDiv, body.firstChild);
-console.log(body)
+function createBar(css) {
+    var body = document.body;
+    var mainBar = document.createElement("div");
+    mainBar.className("main")
+    body.appendChild(mainBar)
+
+}
+
+
+(function() {
+    'use strict';
+    const css = GM_getResourceText("IMPORTED_CSS");
+    GM_addStyle(css);
+    const bar = createBar();
+})
