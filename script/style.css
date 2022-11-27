@@ -1,4 +1,4 @@
-.main {
+#mainBar {
     position:fixed;
     width:100%;
     height:60px;
@@ -8,3 +8,15 @@
     background-color: aqua;
 }
 
+#innerBar {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:black;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
